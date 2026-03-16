@@ -21,3 +21,11 @@ Taken from: https://www.rebelpeon.com/bitwarden-ssh-agent-on-wsl2/
 5.  Open `~/.bashrc`, and add the following line, replacing `<path_to_script>`:
 
         source <path_to_script>/wsl2-bitwarden-ssh-agent.sh
+
+6.  Refresh your shell:
+
+        source ~/.bashrc
+
+7.  Test that ssh can read your bitwarden keys:
+
+        ssh-add -L
